@@ -62,7 +62,8 @@ def exibir_resumo(produtos, total, desconto):
         print(f"{nome} - R$ {preco:.2f}")
     print("-" * 25)
     print(f"Subtotal: R$ {total:.2f}")
-    print(f"Desconto ({desconto/total*100:.0f}%): R$ {desconto:.2f}")
+    percentual_desconto = (desconto / total * 100) if total > 0 else 0
+    print(f"Desconto ({percentual_desconto:.0f}%): R$ {desconto:.2f}")
     print(f"Total: R$ {total - desconto:.2f}")
 
 # inicio do programa
