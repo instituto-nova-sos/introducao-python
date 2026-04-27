@@ -72,7 +72,6 @@ elif media < 7:
 else:
     print(f"Siuacao: Aprovado.")
 
-
 # -----------------------------------------------
 # EXERCICIO 2: Calculadora de aumento salarial
 # -----------------------------------------------

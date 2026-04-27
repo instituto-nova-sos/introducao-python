@@ -20,7 +20,7 @@ num2 = float(input("Digite o segundo numero: "))
 result_soma = num1 + num2
 print(f"A soma dos numeros é: {result_soma}")
 print()
- 
+
 # -----------------------------------------------
 # EXERCICIO 2: Par ou impar
 # -----------------------------------------------
