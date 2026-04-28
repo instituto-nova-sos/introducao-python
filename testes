@@ -1,0 +1,20 @@
+
+CÓDIGO EM TRY E EXCEPT-------------------------------------------------------------
+
+while True:
+    try: 
+        idade_str = int(input("digite sua idade: "))
+        print(f'Idade válida você tem {idade_str} anos')
+        break
+    except:
+        print('Idade inválida!')
+
+CÓDIGO EM IF E ELSE---------------------------------------------------------------
+
+while True:
+    idade_str = input("digite sua idade: ")
+    if idade_str.isdigit():
+        print('Idade válida você tem {idade} anos')
+        break
+    else:
+        print('Idade inválida!')
