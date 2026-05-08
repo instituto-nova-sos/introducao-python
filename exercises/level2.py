@@ -34,6 +34,30 @@
 
 # Escreva seu codigo aqui:
 
+def obter_nota_valida(mensagem):
+    while True:
+        try:
+            nota = float(input(mensagem))
+            if 0 <= nota <= 10:
+                return nota
+            else:
+                print("Nota inválida. Digite um valor de 0 a 10.")
+        except ValueError:
+            print("Entrada inválida. Digite apenas números")
+
+n1 = obter_nota_valida("Digite sua primeira nota: ")
+n2 = obter_nota_valida("Digite sua segunda nota: ")
+n3 = obter_nota_valida("Digite sua terceira nota: ")
+n4 = obter_nota_valida("Digite sua quarta nota: ")
+
+média = (n1 + n2 + n3 + n4)/4
+
+if média >= 7:
+    print(f"Parabéns! Você foi aprovado com nota", média)
+elif média >= 5 and média <= 6.9:
+    print(f"Ainda há esperança! Você está de recuperação com nota", média)
+else:
+    print(f"Que pena, você foi reprovado com nota", média)
 
 # -----------------------------------------------
 # EXERCICIO 2: Calculadora de aumento salarial
@@ -58,6 +82,25 @@
 # -----------------------------------------------
 
 # Escreva seu codigo aqui:
+
+#while True:
+#    try:
+#        salario = float(input("Digite o seu salário: "))
+#        break 
+#    except ValueError:
+#            print("Formato inválido. Por favor, digite o seu salário em forma numérica")
+
+#if salario >= 0 and salario <= 1500:
+#    salario_atual = salario * 1.15
+#elif salario >= 1500.01 and salario <= 3000:
+#    salario_atual = salario * 1.1
+#else: salario_atual = salario * 1.05
+
+#print(f"Salario atual: ", salario)
+#print(f"A porcentagem de aumento foi:", ((salario_atual/salario) - 1)*100, "%")
+#print(f"O aumento foi de:", salario_atual - salario)
+#print(f"O seu novo salário é: ", salario_atual)
+
 
 
 # -----------------------------------------------
@@ -85,7 +128,20 @@
 
 # Escreva seu codigo aqui:
 
+#usuario_ok = "admin"
+#senha_ok = "1234"
 
+#for i in range(3):
+#    login = input("Digite o login: ")
+#    senha = input("Digite a senha: ")
+
+#    if login == usuario_ok and senha == senha_ok:
+#        print("Usuário e senha corretos. Redirecionando...")
+#        break
+#    else:
+#        print(f"Dados incorretos. Tentativa {i + 1} de 3")
+#else: 
+#    print("Você excedeu o número de tentativas. Acesso bloquado.")
 # -----------------------------------------------
 # EXERCICIO 4: Tabuada completa
 # -----------------------------------------------
@@ -107,6 +163,24 @@
 # -----------------------------------------------
 
 # Escreva seu codigo aqui:
+
+def tabuada():
+    while True:
+        try:
+            numero = int(input("Digite o número que você quer saber a tabuada: "))
+            for i in range(1, 11):
+                resultado = numero * i
+                print(f"{numero} * {i} = {resultado}")
+        
+
+            novamente = input("Deseja saber outro número? (sim/nao) ")
+            if novamente != 'sim':
+                print("Operação finalizada.")
+                break
+
+        except ValueError:
+            print("Formato inválido. por favor, digite um número inteiro.")
+
 
 
 # -----------------------------------------------

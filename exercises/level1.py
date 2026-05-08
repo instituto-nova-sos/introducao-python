@@ -30,6 +30,9 @@
 
 # Escreva seu codigo aqui:
 
+numero1 = int(input('Digite um número: '))
+numero2 = int(input('Digite um segundo número: '))
+print(f"O resultado da soma desses dois números é: {numero1 + numero2}")
 
 # -----------------------------------------------
 # EXERCICIO 2: Par ou impar
@@ -47,6 +50,12 @@
 
 # Escreva seu codigo aqui:
 
+numero = int(input('Digite um número para saber se esse é ímpar ou par: '))
+
+if numero % 2 == 0:
+    parimpar = "par"
+else: parimpar = "ímpar"
+print(f"O número digitado é {parimpar}")
 
 # -----------------------------------------------
 # EXERCICIO 3: Conversor de temperatura
@@ -64,8 +73,9 @@
 # -----------------------------------------------
 
 # Escreva seu codigo aqui:
-
-
+temperatura = float(input('Digite a temperatura a ser convertida: '))
+temperatura_final = (temperatura)*9/5 + 32
+print(f"A temperatura convertida para graus Fahrenheit é: {temperatura_final}")
 # -----------------------------------------------
 # EXERCICIO 4: Calculadora simples
 # -----------------------------------------------
@@ -83,8 +93,19 @@
 # -----------------------------------------------
 
 # Escreva seu codigo aqui:
+numero1 = float(input('Digite o primeiro número: '))
+numero2 = float(input('Digite o segundo número: '))
+operacao = input('Digite a operação desejada (+, -, *, /): ')
 
-
+if operacao == '+':
+    resultado = numero1 + numero2
+elif operacao == '-':
+    resultado = numero1 - numero2
+elif operacao == '*':
+    resultado = numero1 * numero2
+elif operacao == '/':
+    resultado = numero1 / numero2
+print("O resultado da operação é: ", resultado)
 # -----------------------------------------------
 # EXERCICIO 5: Classificacao por faixa etaria
 # -----------------------------------------------
@@ -102,7 +123,18 @@
 # -----------------------------------------------
 
 # Escreva seu codigo aqui:
-
+idade = int(input("Digite a sua idade: "))
+if 0 < idade < 12:
+    usuario = 'criança'
+elif 13 < idade < 17:
+    usuario = 'adolescente'
+elif 18 < idade < 59:
+    usuario = 'adulto'
+elif 60 < idade:
+    usuario = 'idoso'
+elif idade < 0:
+    usuario = 'idade inválida'
+print("Você é: ", usuario)
 
 # -----------------------------------------------
 # EXERCICIO 6: Verificar triangulo
@@ -126,3 +158,12 @@
 # -----------------------------------------------
 
 # Escreva seu codigo aqui:
+
+lado1 = float(input('Digite um dos lados do triângulo: '))
+lado2 = float(input('Digite outro lado do triângulo: '))
+lado3 = float(input('Digite o último lado do triângulo: '))
+
+if lado3 < lado1 + lado2:
+    print("Os lados formam um triângulo váilido!")
+else:
+    print("Os lados NÃO formam um triângulo válido!")
