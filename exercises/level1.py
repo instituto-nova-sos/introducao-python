@@ -29,7 +29,10 @@
 # -----------------------------------------------
 
 # Escreva seu codigo aqui:
-
+primeiro_número = int(input('Digite o primeiro número: '))
+segundo_número = int(input('Digite o segundo número: '))
+Soma= primeiro_número + segundo_número
+print: ('A soma é:  {soma}')
 
 # -----------------------------------------------
 # EXERCICIO 2: Par ou impar
@@ -47,7 +50,11 @@
 
 # Escreva seu codigo aqui:
 
-
+número = int(input('Digite um número: '))
+if número % 2 == 0:
+    print(' {número} é um número par')
+else:
+     print(' {número} é um número ímpar')
 # -----------------------------------------------
 # EXERCICIO 3: Conversor de temperatura
 # -----------------------------------------------
@@ -64,7 +71,9 @@
 # -----------------------------------------------
 
 # Escreva seu codigo aqui:
-
+C = float(input('Digite a temperatura em Celsius: '))
+F = C * 9/5 + 32
+print(f' {C} °C equivale a {F} °F')     
 
 # -----------------------------------------------
 # EXERCICIO 4: Calculadora simples
@@ -83,7 +92,28 @@
 # -----------------------------------------------
 
 # Escreva seu codigo aqui:
+n1 = float(input('Digite um número: '))
+conta = input('digite a operação (+,-,/,*): ')
+n2 = float(input('Digite outro número: '))
 
+if conta == "+":
+    conta = n1 + n2
+    print(f' =  {conta}')
+
+elif conta == "-":
+    conta = n1 - n2
+    print(f' =  {conta}')
+
+elif conta == "/":
+    if n2 !=0:
+        conta = n1 / n2
+        print(f' = {conta}')
+    else: 
+        print("Tá dividindo por 0?? quer queimar o PC seu maluco?")
+
+elif conta == "*":
+    conta = n1 * n2
+    print(f' =  {conta}')
 
 # -----------------------------------------------
 # EXERCICIO 5: Classificacao por faixa etaria
@@ -102,7 +132,27 @@
 # -----------------------------------------------
 
 # Escreva seu codigo aqui:
+idade= float(input('digite sua idade: '))
+if  idade <= 0: 
+    print("É sério cara? quer atenção?😡")
 
+elif  0 < idade <= 12:
+    print("Você ê ainda é um(a) pivéte👶")
+
+elif 12 < idade <= 17:
+    print("você é um aborrecente😤")
+
+elif 17 < idade <= 29:
+    print("Você é um jovem adulto que está começando a crescer na vida😯")
+
+elif 29 < idade <= 59:
+    print("Você é´um adulto com muitas experiências e hitórias pra contar🤩")
+
+elif 59 < idade <= 110:
+    print("Você é um idoso um velha guarda 🔥")
+
+elif 110 < idade:
+    print("Valeu Noé! 😑👍")
 
 # -----------------------------------------------
 # EXERCICIO 6: Verificar triangulo
@@ -126,3 +176,15 @@
 # -----------------------------------------------
 
 # Escreva seu codigo aqui:
+l1 = int(input('Lado 1: '))
+l2 = int(input('Lado 2: '))
+l3 = int(input('Lado 3: '))
+
+if (l1 + l2 > l3) and (l2 + l3 > l1) and (l3 + l1 > l2):
+    S = (l1 + l2 + l3) / 2
+    A = (S * (S - l1) * (S - l2) * (S - l3)) ** 0.5                  
+
+    print(f'✅ É um triângulo válido! Com uma área de {A:.2f}m²')
+
+else:
+    print(f"❌ Error. Desculpe amigo mas esse triângulo é inválido! {l1} x {l2} x {l3}  não dá né? ")
