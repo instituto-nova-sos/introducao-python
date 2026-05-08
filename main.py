@@ -146,13 +146,13 @@ def exibir_contracheque(nome, salario_bruto):
     inss = salario_bruto * 0.08
     liquido = calcular_salario_liquido(salario_bruto)
 
-    print(f"\n--- CONTRACHEQUE ---")
+    print("\n--- CONTRACHEQUE ---")
     print(f"Funcionario: {nome}")
     print(f"Salario bruto:  R$ {salario_bruto:.2f}")
     print(f"Imposto (10%):  R$ {imposto:.2f}")
     print(f"INSS (8%):      R$ {inss:.2f}")
     print(f"Salario liquido: R$ {liquido:.2f}")
-    print(f"--------------------")
+    print("--------------------")
 
 
 # Usando as funcoes

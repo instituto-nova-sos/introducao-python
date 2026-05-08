@@ -647,13 +647,22 @@ Essa tecnica ajuda voce a **encontrar erros de logica** antes mesmo de rodar o p
 
 ## Exercicios
 
-Os exercicios estao organizados em niveis progressivos na pasta `exercises/`:
+Os exercicios estao organizados em niveis progressivos na pasta `exercises/`.
+Cada exercicio fica em seu proprio arquivo, dentro da pasta do nivel correspondente:
 
-- **`exercises/level1.py`** - Exercicios basicos (variaveis, entrada/saida, condicionais simples)
-- **`exercises/level2.py`** - Exercicios intermediarios (condicionais compostas, lacos, logica)
-- **`exercises/level3.py`** - Problemas do mundo real (validacao, carrinho de compras, sistema bancario)
+- **`exercises/level1/`** - Exercicios basicos (variaveis, entrada/saida, condicionais simples)
+- **`exercises/level2/`** - Exercicios intermediarios (condicionais compostas, lacos, logica)
+- **`exercises/level3/`** - Problemas do mundo real (validacao, carrinho de compras, sistema bancario)
 
-Na pasta `exercises/`, voce tambem encontrara um desafio de funcoes integrado nos exercicios de nivel 3.
+Os arquivos sao numerados (`01_soma.py`, `02_par_impar.py`, ...). Comece pelo
+exercicio 01 de cada nivel e siga em ordem. Execute um exercicio com:
+
+```bash
+python exercises/level1/01_soma.py
+```
+
+Na pasta `exercises/level3/`, voce tambem encontrara um desafio de funcoes
+(`04_funcoes.py`).
 
 ---
 
