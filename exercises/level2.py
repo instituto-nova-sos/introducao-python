@@ -33,9 +33,20 @@
 # -----------------------------------------------
 
 # Escreva seu codigo aqui:
-
-
-# -----------------------------------------------
+n1 = float(input("Digite sua nota de 0 a 10: "))
+n2 = float(input("Digite sua nota de 0 a 10: "))
+n3 = float(input("Digite sua nota de 0 a 10: "))
+n4 = float(input("Digite sua nota de 0 a 10: "))
+if 0 > n1 or n2 or n3 or n4 < 10:
+    print ("Não aceitamos notas negativas, digite novamente")
+media = (n1 + n2 + n3 +n4 ) / 4
+if media >= 7:
+    print ("Parabéns! Você foi aprovado com a seguinte média", media)
+elif 5>= media <= 7: 
+    print ("Não desista, você está de recuperação com a média", media)
+else:
+    print ("Sorry honey, você foi reprovado com a seguinte média", media)
+# ---------------------------------------------
 # EXERCICIO 2: Calculadora de aumento salarial
 # -----------------------------------------------
 # Peca o salario atual do funcionario.
@@ -45,7 +56,7 @@
 #   - Salario acima de R$ 3000: aumento de 5%
 #
 # Exiba:
-#   - Salario atual
+#   - Salario atu
 #   - Percentual de aumento
 #   - Valor do aumento
 #   - Novo salario

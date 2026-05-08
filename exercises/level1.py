@@ -29,8 +29,10 @@
 # -----------------------------------------------
 
 # Escreva seu codigo aqui:
-
-
+n1 = int(input("Digite o primeiro número: "))
+n2 = int(input("Digite o segundo número: "))
+soma = n1+n2
+print("A soma dos números acima é: " ,soma)
 # -----------------------------------------------
 # EXERCICIO 2: Par ou impar
 # -----------------------------------------------
@@ -46,7 +48,11 @@
 # -----------------------------------------------
 
 # Escreva seu codigo aqui:
-
+nint = int(input("Digite um número inteiro:"))
+if nint % 2 == 0:
+    print("O número ",nint," digitado é par")
+else:
+    print("O número ",nint," digitado é impar")
 
 # -----------------------------------------------
 # EXERCICIO 3: Conversor de temperatura
@@ -64,7 +70,9 @@
 # -----------------------------------------------
 
 # Escreva seu codigo aqui:
-
+celsius = float(input("Escreva uma temperatura em Celsius"))
+fahrenheit = celsius * 9/5 + 32
+print ("Sua temperatura convertida de Celsius para Fahnheit é ",fahrenheit)
 
 # -----------------------------------------------
 # EXERCICIO 4: Calculadora simples
@@ -83,8 +91,22 @@
 # -----------------------------------------------
 
 # Escreva seu codigo aqui:
-
-
+n1 = int(input("Digite o primeiro número: "))
+n2 = int(input("Digite o segundo número: "))
+operacao = input("Qual operação você deseja realizar entre +(soma), -(subtração), *(multiplicação ou /(divisão)?")
+if operacao == "+":
+    print ("A soma dos números escolhidos é ",n1+n2)
+elif operacao == "-":
+    print ("A subtração dos números escolhidos é ",n1-n2)
+elif operacao == "*":
+    print ("A multiplicação dos números escolhidos é ",n1*n2)
+elif operacao == "/":
+    if % 2 == 0:
+        print ("A divisão dos números escolhidos é ",n1/n2)
+    else:    
+        print ("A divisão dos números resulta em zero")
+else:
+    print ("Operação inválida")
 # -----------------------------------------------
 # EXERCICIO 5: Classificacao por faixa etaria
 # -----------------------------------------------
@@ -102,8 +124,17 @@
 # -----------------------------------------------
 
 # Escreva seu codigo aqui:
-
-
+idade = int(input("Qual a sua idade? "))
+if 0 <= idade <= 12:
+    print ("Com ",idade," anos você é uma criança")
+elif 13 <= idade <= 17:
+    print ("Com ",idade," anos você é um adolescente")
+elif 18 <= idade <= 59:
+    print ("Com ",idade," anos você é um adulto")
+elif idade >= 60:
+    print ("Com",idade," anos você é um idoso")
+else:
+    print ("Idade inválida")
 # -----------------------------------------------
 # EXERCICIO 6: Verificar triangulo
 # -----------------------------------------------
@@ -126,3 +157,14 @@
 # -----------------------------------------------
 
 # Escreva seu codigo aqui:
+n1 = int(input("Digite o lado direito do triangulo: "))
+n2 = int(input("Digite o lado esquerdo do triangulo: "))
+n3 = int(input("Digite a base do triangulo: "))
+if n1+n2 > n3:
+    print ("Os lados formam um triangulo valido!")
+elif n1+n2 < n3:
+    print ("Os lados não formam um triangulo valido!")
+elif n1+n3 > n2:
+    print ("Os lados formam um triangulo valido!")
+elif n1+n3 < n2:
+    print ("Os lados não formam um triangulo valido!")
