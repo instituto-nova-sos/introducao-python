@@ -19,3 +19,30 @@
 # -----------------------------------------------
 
 # Escreva seu codigo aqui:
+numero1 = float(input("Digite o primeiro número: "))
+numero2 = float(input("Digite o segundo número: "))
+
+operacao = input("Qual operacao deseja? (+, -, *, /): ")
+
+if operacao == "+":
+    resultado = numero1 + numero2
+
+elif operacao == "-":
+    resultado = numero1 - numero2
+
+elif operacao == "*":
+    resultado = numero1 * numero2
+
+elif operacao == "/":
+    if numero2 != 0:
+        resultado = numero1 / numero2
+    else:
+        print("Erro: divisao por zero")
+        resultado = None
+
+else:
+    print("Operacao invalida")
+    resultado = None
+
+if resultado != None:
+    print(numero1, operacao, numero2, "=", resultado)
