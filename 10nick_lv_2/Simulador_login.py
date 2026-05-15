@@ -11,7 +11,7 @@ while tentativas > 0:
     else:
         tentativas -= 1
         if tentativas > 0:
-            print(f'Senha incorreta Você só tem mais {tentativas} tentativas' )
+            print(f'Senha incorreta ou usuário Você só tem mais {tentativas} tentativas' )
         else:
             print('Usuário bloqueado no dispositivo!' )
-            break
+           

@@ -112,7 +112,7 @@
 #   - ler_salario() -> retorna salario valido (float)
 #   - exibir_cadastro(nome, idade, email, salario) -> mostra dados
 #
-# Exemplo de saida esperada:
+# Exemplo de saida esperada:5
 #   --- CADASTRO ---
 #   Nome:
 #   Erro: nome nao pode ser vazio!

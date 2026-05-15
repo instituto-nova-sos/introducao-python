@@ -311,8 +311,8 @@ Soma dos ímpares: {sum(impar)}
 
 
 # -----------------------------------------------
-# EXERCICIO 7: Sequencia de Fibonacci
-# -----------------------------------------------
+# EXERCICIO 7: Sequencia de Fibonacci--
+# ---------------------------------------------
 # Peca ao usuario quantos termos da sequencia de
 # Fibonacci ele quer ver.
 # Exiba a sequencia.
