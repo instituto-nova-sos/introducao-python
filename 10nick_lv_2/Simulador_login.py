@@ -7,11 +7,7 @@ while tentativas > 0:
     senha = input('Digite sua senha: ')
     if nome == nome_correto and senha == senha_correta:
         print(f'Bem vindo {nome}!')
-        break
-    else:
-        tentativas -= 1
-        if tentativas > 0:
-            print(f'Senha incorreta Você só tem mais {tentativas} tentativas' )
-        else:
-            print('Usuário bloqueado no dispositivo!' )
-            break
+        break    
+    tentativas -= 1
+    mensagem = f'Nome de usuário ou senha incorretos. Você só tem mais {tentativas} tentativas.' if tentativas > 0 else 'Número de tentativas esgotado. Acesso bloqueado.' 
+    print(mensagem)
