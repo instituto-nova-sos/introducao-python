@@ -13,8 +13,12 @@
 # Exemplo de saida esperada:
 #   Digite a temperatura em Celsius: 30
 #   30.0°C equivale a 86.0°F
-#
+#python exercises/level1/03_temperatura.pypython exercises/level1/03_temperatura.py
 # Dica: Use float() para permitir numeros decimais.
 # -----------------------------------------------
 
 # Escreva seu codigo aqui:
+tempc = float(input("Digite a temperatura em ºCelsius: "))
+tempF = tempc * 9/5 + 32
+
+print(tempc,"ºC equivale a", tempF,"ºF")
