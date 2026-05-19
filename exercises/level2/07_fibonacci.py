@@ -22,3 +22,30 @@
 # -----------------------------------------------
 
 # Escreva seu codigo aqui:
+
+while True:
+    termos = input('Digite um número: ')
+    fibonacci = [0,1]
+    try:
+        termos = int(termos)
+
+        if termos <= 0:
+            print('Por favor digite um número positivo! ➕')
+            continue
+        elif termos > 200:
+            print(f"print(f'⚠️ Limite excedido! {termos} é muito grande. Digite até 200 se não seu PC vai virar uma churrasqueira elétrica! 💣\n')")
+            continue
+        elif termos == 1:
+            print('Sequência gerada: [0]')
+            break
+        elif termos == 2:
+            print(f"Sequência gerada: {fibonacci}")
+            break
+        else:
+            for i in range(termos -2):
+                proximo_numero = fibonacci[-1] + fibonacci[-2]
+                fibonacci.append(proximo_numero)
+            print(f'Sequência gerada: {fibonacci}')
+        break
+    except ValueError:
+        print(f'Tu vai calcular Fibonacci com "{termos}"? 🤬')
