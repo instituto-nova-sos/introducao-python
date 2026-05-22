@@ -19,3 +19,16 @@
 # -----------------------------------------------
 
 # Escreva seu codigo aqui:
+idade = int(input("digite sua idade> "))
+if idade < 0:
+    print("idade invalida: ")
+elif idade < 13:
+    print("crianca: ")
+if idade 
+
+
+
+
+
+
+#numero = int(input("Digite um numero: "))

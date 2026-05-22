@@ -18,3 +18,23 @@
 # -----------------------------------------------
 
 # Escreva seu codigo aqui:
+celsius = float(input("Digite a temperatura em celsius:"))
+Fahrenheit = celsius * 9/5 + 32
+print(celsius, "°C equivale a", Fahrenheit, "°f")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      
