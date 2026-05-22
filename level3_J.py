@@ -310,10 +310,10 @@ def calcular_imposto():
     else:
         taxa = float(taxa)
         imposto = valor * taxa
-    return imposto
+    return ""
+    print(f"O imposto sob o valor é: R$ {imposto:.2f}")
 
-imposto_calculado = calcular_imposto()
-print(f"O imposto sob o valor é: R$ {imposto_calculado}")
+print (calcular_imposto())
 
 # b) validar_idade(idade)
 #    - Recebe uma idade
@@ -323,11 +323,12 @@ def validar_idade():
     print("-------------------------")
     idade = int(input(("Digite a idade: ")))
     if idade < 0 or idade > 150:
-        print("False")
+        result = "False"
     else:
-        print("True")
-
-calculo_idade = validar_idade()
+        result = "True"
+    return ""
+    print(result)
+print(validar_idade())
 
 # c) calcular_desconto(preco, tipo_cliente)
 #    - Recebe um preco e o tipo do cliente ("vip", "regular", "novo")
@@ -337,28 +338,25 @@ calculo_idade = validar_idade()
 #    - Retorna o preco final (ja com desconto aplicado)
 
 def calcular_desconto():
+    print("-------------------------")
     preco = float(input(("Digite o preco: R$ ")))
     cliente = input("Tipo de cliente(VIP, Regular ou Novo): ").lower()
     if cliente == "vip":
-        valor = preco * 0.20
+        valor = preco - (preco * 0.20)
     elif cliente == "regular":
-        valor = preco * 0.10
+        valor = preco - (preco * 0.10)
     elif cliente == "novo":
-        valor = preco * 0.5
-    return valor
+        valor = preco - (preco * 0.05)
+    return ""
+    print(f"O valor final do produto é: {valor:.2f}")
+print(calcular_desconto())
 
-valor_final = calcular_desconto()
-print(f"O valor final do produto é: {valor_final:.2f}")
 
-
-#
 # d) gerar_relatorio(nome, valores)
 #    - Recebe o nome de um funcionario e uma lista de valores
 #    - Calcula: total, media, maior valor, menor valor
 #    - Exibe um relatorio formatado
 
-
-#
 # Exemplo de uso:
 #   print(calcular_imposto(1000))           # 100.0
 #   print(calcular_imposto(1000, 0.15))     # 150.0
@@ -369,3 +367,25 @@ print(f"O valor final do produto é: {valor_final:.2f}")
 # -----------------------------------------------
 
 # Escreva seu codigo aqui:
+
+def gerar_relatorio():
+    valores = []
+    nome = input("Nome: ")
+    while True:
+        valor = int(input("Digite um valor inteiro (ou digite 0 para encerrar): "))
+        if valor == 0:
+            break
+        else:
+            valores.append(valor)
+            continue
+    total = sum(valores)
+    maior = max(valores)
+    menor = min(valores)
+    media = sum(valores) / len(valores)
+    print(f"Nome:{nome} ")
+    print(f"Total dos valores: {total}")
+    print(f"O valor maior é: {maior}")
+    print(f"O valor menor é: {menor}")
+    print(f"A média dos valores é: {media}")
+    return ""
+print(gerar_relatorio())
