@@ -97,3 +97,14 @@ total_descontos = calcular_desconto(total_compra)
 
 # exibe o resumo da compra, passando a lista de produtos, o total e o desconto para a funcao `exibir_resumo`
 exibir_resumo(carrinho, total_compra, total_descontos)
+
+
+
+
+
+
+
+
+
+
+
